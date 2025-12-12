@@ -1,0 +1,115 @@
+/* ------------------------------
+   GLOBAL STYLING
+--------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Center container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ------------------------------
+   HEADERS
+--------------------------------*/
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   FORMS & INPUTS
+--------------------------------*/
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 10px 15px;
+    width: 200px;
+    font-size: 15px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="number"]:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(52,152,219,0.4);
+}
+
+/* Buttons */
+button {
+    padding: 10px 18px;
+    background: #3498db;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ------------------------------
+   LINKS
+--------------------------------*/
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   LISTS FOR RECOMMENDATIONS
+--------------------------------*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ecf0f1;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    border-left: 5px solid #3498db;
+    transition: 0.2s ease-in-out;
+}
+
+ul li:hover {
+    background: #dfe6e9;
+}
+
+/* ------------------------------
+   IMAGES (PROGRESS CHART)
+--------------------------------*/
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning System</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h1>AI-Driven Learning System</h1>
+
+    <h3>Enter Student ID:</h3>
+    <form action="/recommend" method="POST">
+        <input type="number" name="student_id" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <form action="/progress" method="POST">
+        <input type="number" name="student_id" required>
+        <button type="submit">View Progress</button>
+    </form>
+
+    <form action="/predict" method="POST">
+        <input type="number" name="student_id" required>
+        <button type="submit">Predict Performance</button>
+    </form>
+
+</body>
+</html>

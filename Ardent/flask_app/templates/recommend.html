@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h2>Personalized Recommendations for Student {{student_id}}</h2>
+
+    <h3>Collaborative Filtering:</h3>
+    <ul>
+        {% for item, score in recommendations['cf'] %}
+        <li>Material {{item}} (Predicted Rating: {{score}})</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Cluster-Based Suggestions:</h3>
+    <ul>
+        {% for item in recommendations['cluster'] %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Back</a>
+</body>
+</html>
